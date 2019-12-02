@@ -2,6 +2,10 @@ for i in range(256):
     b = bytes([i])
     print(b,int.from_bytes(b, byteorder='little', signed=True))
 
+# to 
+hash_255 = [i for i in range(128)]
+hash_255.extend([i for i in range(128,0,-1)])
+    
 """
 b'\x00' 0
 b'\x01' 1
